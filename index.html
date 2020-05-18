@@ -155,7 +155,10 @@
           <div class="col-md-10 col-md-offset-1">
             <h1 class="brand-heading">&nbsp;</h1>
             <h1 class="brand-heading">&nbsp;</h1>
-            <span class="intro-text"></span>
+            <span class="intro-text"><!--
+If you want to have a static message in your intro layout, disable the dynamic-typing in the _config.yml and write here your text
+-->
+</span>
             <h5>&nbsp;</h5>
             <a href="#" class="page-scroll">
               
@@ -352,32 +355,54 @@
           <section id="teaching" class="container content-section">
   <div class="teaching-container">
     <h3>Teaching</h3>
-    <div class ="row">
-      <div class="teaching-row">
-        <div class="column">
-          <div class="teaching-header">Term</div>
-          <div class="teaching-body">Summer Term 2 2020</div>
-          <div class="teaching-body">Term 2 2019</div>
-          <div class="teaching-body">Fall 2018</div>
-        </div>
+    <div class ="teaching-row">
+      <div class="teaching-column">
+        <div class="teaching-header">Term</div>
       </div>
-      <div class="teaching-row">
-        <div class="column">
-          <div class="teaching-header">Course Webpage</div>
-          <div class="teaching-body">Integral Calculus (Math 101)</div>
-          <div class="teaching-body"><a href="https://friedlander.io/19T2-406/">Computational Optmization (CPSC 406)</a></div>
-          <div class="teaching-body">Matrix Analysis (CAAM 335)</div>
-        </div>
+      <div class="teaching-column">
+        <div class="teaching-header">Course Webpage</div>
       </div>
-      <div class="teaching-row">
-        <div class="column">
-          <div class="teaching-header">Institution</div>
-          <div class="teaching-body">UBC</div>
-          <div class="teaching-body">UBC</div>
-          <div class="teaching-body">Rice University</div>
-        </div>
-      </div>  
+      <div class="teaching-column">
+        <div class="teaching-header">Institution</div>
+      </div>
     </div>
+    <div class ="teaching-row 2">
+      <div class="teaching-column">
+        <div class="teaching-body">Summer Term 2 2020</div>
+      </div>
+      <div class="teaching-column">
+        <div class="teaching-body">Integral Calculus (Math 101)</div>
+      </div>
+      <div class="teaching-column">
+        <div class="teaching-body">UBC</div>
+      </div>
+    </div>
+
+    <div class ="teaching-row 3">
+      <div class="teaching-column">
+        <div class="teaching-body">Term 2 2019</div>
+      </div>
+      <div class="teaching-column">
+        <div class="teaching-body"><a href="https://friedlander.io/19T2-406/">Computational Optmization (CPSC 406)</a></div>
+      </div>
+      <div class="teaching-column">
+        <div class="teaching-body">UBC</div>
+      </div>
+    </div>
+
+    <div class ="teaching-row 4">
+      <div class="teaching-column">
+        <div class="teaching-body">Fall 2018</div>
+      </div>
+      <div class="teaching-column">
+        <div class="teaching-body">Matrix Analysis (CAAM 335)</div>
+      </div>
+      <div class="teaching-column">
+        <div class="teaching-body">Rice University</div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
         
@@ -448,7 +473,7 @@ $(function(){
   <!-- Collapse navbar when navbar-brand is clicked -->
 
   <script>
-  $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:".5px"},500,function(){$(".collapse.in").removeClass("in")})})});
+  $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});
   </script>
 
 
